@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "brunnojob/swift-offshore-ups-runtime-estimator",
-  "source_commit": "2425f7a350ba126f36187bb519f9847bb6703c2f",
-  "generated_at": "2026-10-10T02:36:32.335411+00:00",
-  "run_url": "https://github.com/brunnojob/swift-offshore-ups-runtime-estimator/actions/runs/38017577821",
+  "source_commit": "0309af272d975c7f05dcb0f69f91efbfdcca7d7d",
+  "generated_at": "2026-10-10T02:44:52.181310+00:00",
+  "run_url": "https://github.com/brunnojob/swift-offshore-ups-runtime-estimator/actions/runs/38018074306",
   "inputs_sha256": {
     ".proof/scenarios.json": "29e826bbe07bcc06c0854f3d917880dc098157bf6d8b0e6be0d2ae1b973c5125",
     "examples/input.txt": "93af3c4c245b7d4b1bb30f79d8e77f407cb0704b1e80eb9c9fa1ec4506dc6d57"
@@ -23,7 +23,7 @@
       "exit": 0,
       "expected_exit": 0,
       "passed": true,
-      "seconds": 7.608,
+      "seconds": 7.6,
       "output": "Tests passed\n{\"dischargedAh\":6.758955169362245,\"energyWh\":302.79166666666663,\"lowVoltage\":false,\"remainingHours\":5.731887007543569,\"stateOfCharge\":0.9324104483063774}\n",
       "output_sha256": "b35f1739fcaf46b0c9f514aac30f8cc83f402e37034de7b19055588bae05838c"
     },
@@ -36,7 +36,7 @@
       "exit": 0,
       "expected_exit": 0,
       "passed": true,
-      "seconds": 0.062,
+      "seconds": 0.06,
       "output": "{\"dischargedAh\":6.758955169362245,\"energyWh\":302.79166666666663,\"lowVoltage\":false,\"remainingHours\":5.731887007543569,\"stateOfCharge\":0.9324104483063774}\n",
       "output_sha256": "94554c61683de91d1e876d51e47a33da338db0fc40d5994f8894e079ad653097"
     },
@@ -49,7 +49,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.064,
+      "seconds": 0.151,
       "output": "Missing input\n",
       "output_sha256": "59dde097c155045b6510b44b5d0ee86176974b3476c8b96718ac676f66134e97"
     },
@@ -62,7 +62,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.137,
+      "seconds": 0.156,
       "output": "Invalid CSV row\n",
       "output_sha256": "64aaf8a3f81772044320e6481a9fe33ac80bfdb41f6deb590512cd62c2cd30b7"
     },
@@ -76,7 +76,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.111,
+      "seconds": 0.128,
       "output": "Unsupported command arguments\n",
       "output_sha256": "a7217611e9bf4e2fd5cbbd1b8b97c5898f154b14da948e9e35008b59b8158bcd"
     },
@@ -89,7 +89,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.123,
+      "seconds": 0.131,
       "output": "Input record too large\n",
       "output_sha256": "45eb187fdae97f09b79c4bcd5c03d9b942872125e5fb5b6a83011b36f8d62333"
     }
