@@ -1,0 +1,11 @@
+name: Verify
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: macos-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: swiftc Sources/main.swift -o app && ./app --self-test && ./app < examples/input.txt
