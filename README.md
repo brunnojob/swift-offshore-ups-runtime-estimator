@@ -21,3 +21,11 @@ MIT. Built by [brunnodev](https://brunnodev.store).
 [Verified run](https://github.com/brunnojob/swift-offshore-ups-runtime-estimator/actions/runs/38018074306) · [Execution report](docs/proof/evidence.json)
 
 Run `python .proof/record.py` after installing the prerequisites above. The scenarios execute repository code and verify exit codes and expected output. CI publishes `execution-proof` with the transcript, input fingerprints and source commit. The downloadable report identifies the exact tested version; the workflow badge tracks the latest run.
+
+## Co-authorship
+
+Contribution trailer:
+
+```text
+Co-authored-by: nyctophile <33561761+ineedfoundmyway@users.noreply.github.com>
+```
