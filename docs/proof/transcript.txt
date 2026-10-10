@@ -1,0 +1,18 @@
+$ bash -e -o pipefail -c swiftc Sources/main.swift -o app && ./app --self-test && ./app < examples/input.txt
+Tests passed
+{"dischargedAh":6.758955169362245,"energyWh":302.79166666666663,"lowVoltage":false,"remainingHours":5.731887007543569,"stateOfCharge":0.9324104483063774}
+
+$ ./app
+{"dischargedAh":6.758955169362245,"energyWh":302.79166666666663,"lowVoltage":false,"remainingHours":5.731887007543569,"stateOfCharge":0.9324104483063774}
+
+$ ./app
+Missing input
+
+$ ./app
+Invalid CSV row
+
+$ ./app --unsupported
+Unsupported command arguments
+
+$ ./app
+Input record too large
