@@ -15,6 +15,7 @@ func input(_ columns: Int) throws -> [[String]] {
     var rows: [[String]] = []
     while let line = readLine() {
         try require(rows.count < 100000, "Input capacity exceeded")
+        try require(line.utf8.count <= 8192, "Input record too large")
         let fields = line.split(separator: ",", omittingEmptySubsequences: false).map(String.init)
         try require(fields.count == columns && fields.allSatisfy { !$0.isEmpty }, "Invalid CSV row")
         rows.append(fields)
@@ -64,6 +65,7 @@ func run() throws {
 }
 
 do {
+    try require(CommandLine.arguments.count == 1 || Array(CommandLine.arguments.dropFirst()) == ["--self-test"], "Unsupported command arguments")
     if Array(CommandLine.arguments.dropFirst()) == ["--self-test"] { try test(); print("Tests passed") }
     else { try run() }
 } catch {
